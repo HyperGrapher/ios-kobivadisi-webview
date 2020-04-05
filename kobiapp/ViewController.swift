@@ -1,20 +1,38 @@
 //
 //  ViewController.swift
-//  kobiapp
+//  kobivadisi
 //
-//  Created by burak mestan on 25.03.2020.
+//  Created by burak mestan on 13.02.2020.
 //  Copyright © 2020 Kobi Vadisi. All rights reserved.
 //
 
 import UIKit
+import WebKit
 
 class ViewController: UIViewController {
+    
+    var centerController: UIViewController!
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        configureHomeController()
     }
+    
+    func configureHomeController() {
+           let homeController = HomeController()
+          
+           centerController = UINavigationController(rootViewController: homeController)
+           
+           view.addSubview(centerController.view)
+           addChild(centerController)
+           centerController.didMove(toParent: self)
+       }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+           return .lightContent
+       }
+       
 
 
 }
-

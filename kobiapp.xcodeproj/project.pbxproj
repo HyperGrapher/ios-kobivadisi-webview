@@ -7,15 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D68FB6DC196EAA0FD717461 /* libPods-kobiapp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC281D46BA7C6E8EABA3F8C /* libPods-kobiapp.a */; };
 		67E3EF0C242B6E120030A733 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E3EF0B242B6E120030A733 /* AppDelegate.swift */; };
 		67E3EF0E242B6E120030A733 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E3EF0D242B6E120030A733 /* SceneDelegate.swift */; };
 		67E3EF10242B6E120030A733 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E3EF0F242B6E120030A733 /* ViewController.swift */; };
 		67E3EF13242B6E120030A733 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67E3EF11242B6E120030A733 /* Main.storyboard */; };
 		67E3EF15242B6E130030A733 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67E3EF14242B6E130030A733 /* Assets.xcassets */; };
 		67E3EF18242B6E130030A733 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67E3EF16242B6E130030A733 /* LaunchScreen.storyboard */; };
+		67E3EF20242B774A0030A733 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E3EF1F242B774A0030A733 /* HomeController.swift */; };
+		67E3EF29242B84F50030A733 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E3EF28242B84F50030A733 /* NotificationService.swift */; };
+		67E3EF2D242B84F50030A733 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 67E3EF26242B84F50030A733 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CA8E75BD739CF74FB1366055 /* libPods-OneSignalNotificationServiceExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 607FBA6FEF4FEFF04DBBFAF2 /* libPods-OneSignalNotificationServiceExtension.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		67E3EF2B242B84F50030A733 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67E3EF00242B6E120030A733 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67E3EF25242B84F50030A733;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		67E3EF31242B84F50030A733 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				67E3EF2D242B84F50030A733 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2AC281D46BA7C6E8EABA3F8C /* libPods-kobiapp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-kobiapp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		39C05AEA885315EE8375AF97 /* Pods-kobiapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kobiapp.release.xcconfig"; path = "Target Support Files/Pods-kobiapp/Pods-kobiapp.release.xcconfig"; sourceTree = "<group>"; };
+		607FBA6FEF4FEFF04DBBFAF2 /* libPods-OneSignalNotificationServiceExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OneSignalNotificationServiceExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		67E3EF08242B6E120030A733 /* kobiapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kobiapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67E3EF0B242B6E120030A733 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67E3EF0D242B6E120030A733 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +56,14 @@
 		67E3EF14242B6E130030A733 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67E3EF17242B6E130030A733 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67E3EF19242B6E130030A733 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67E3EF1F242B774A0030A733 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		67E3EF21242B7E7C0030A733 /* kobiapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = kobiapp.entitlements; sourceTree = "<group>"; };
+		67E3EF26242B84F50030A733 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		67E3EF28242B84F50030A733 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		67E3EF2A242B84F50030A733 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97F7B0544391DCAC24D20C82 /* Pods-kobiapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kobiapp.debug.xcconfig"; path = "Target Support Files/Pods-kobiapp/Pods-kobiapp.debug.xcconfig"; sourceTree = "<group>"; };
+		9AC6BFC65F50674E2B7FB459 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		EBAB9CB19A53C1B541D90A31 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +71,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D68FB6DC196EAA0FD717461 /* libPods-kobiapp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67E3EF23242B84F50030A733 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA8E75BD739CF74FB1366055 /* libPods-OneSignalNotificationServiceExtension.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,7 +90,10 @@
 			isa = PBXGroup;
 			children = (
 				67E3EF0A242B6E120030A733 /* kobiapp */,
+				67E3EF27242B84F50030A733 /* OneSignalNotificationServiceExtension */,
 				67E3EF09242B6E120030A733 /* Products */,
+				D64BD40AA9BF996E92A21943 /* Pods */,
+				71CBB6ED19BAE6F05E763444 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				67E3EF08242B6E120030A733 /* kobiapp.app */,
+				67E3EF26242B84F50030A733 /* OneSignalNotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +109,7 @@
 		67E3EF0A242B6E120030A733 /* kobiapp */ = {
 			isa = PBXGroup;
 			children = (
+				67E3EF21242B7E7C0030A733 /* kobiapp.entitlements */,
 				67E3EF0B242B6E120030A733 /* AppDelegate.swift */,
 				67E3EF0D242B6E120030A733 /* SceneDelegate.swift */,
 				67E3EF0F242B6E120030A733 /* ViewController.swift */,
@@ -63,8 +117,38 @@
 				67E3EF14242B6E130030A733 /* Assets.xcassets */,
 				67E3EF16242B6E130030A733 /* LaunchScreen.storyboard */,
 				67E3EF19242B6E130030A733 /* Info.plist */,
+				67E3EF1F242B774A0030A733 /* HomeController.swift */,
 			);
 			path = kobiapp;
+			sourceTree = "<group>";
+		};
+		67E3EF27242B84F50030A733 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				67E3EF28242B84F50030A733 /* NotificationService.swift */,
+				67E3EF2A242B84F50030A733 /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
+		71CBB6ED19BAE6F05E763444 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				607FBA6FEF4FEFF04DBBFAF2 /* libPods-OneSignalNotificationServiceExtension.a */,
+				2AC281D46BA7C6E8EABA3F8C /* libPods-kobiapp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D64BD40AA9BF996E92A21943 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9AC6BFC65F50674E2B7FB459 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				EBAB9CB19A53C1B541D90A31 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
+				97F7B0544391DCAC24D20C82 /* Pods-kobiapp.debug.xcconfig */,
+				39C05AEA885315EE8375AF97 /* Pods-kobiapp.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,18 +158,39 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 67E3EF1C242B6E130030A733 /* Build configuration list for PBXNativeTarget "kobiapp" */;
 			buildPhases = (
+				BD6C438D10D7614A27D94C5C /* [CP] Check Pods Manifest.lock */,
 				67E3EF04242B6E120030A733 /* Sources */,
 				67E3EF05242B6E120030A733 /* Frameworks */,
 				67E3EF06242B6E120030A733 /* Resources */,
+				67E3EF31242B84F50030A733 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				67E3EF2C242B84F50030A733 /* PBXTargetDependency */,
 			);
 			name = kobiapp;
 			productName = kobiapp;
 			productReference = 67E3EF08242B6E120030A733 /* kobiapp.app */;
 			productType = "com.apple.product-type.application";
+		};
+		67E3EF25242B84F50030A733 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67E3EF2E242B84F50030A733 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				2D3AEEBB1F91420831BD43CE /* [CP] Check Pods Manifest.lock */,
+				67E3EF22242B84F50030A733 /* Sources */,
+				67E3EF23242B84F50030A733 /* Frameworks */,
+				67E3EF24242B84F50030A733 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSignalNotificationServiceExtension;
+			productName = OneSignalNotificationServiceExtension;
+			productReference = 67E3EF26242B84F50030A733 /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,14 +205,18 @@
 					67E3EF07242B6E120030A733 = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
+					67E3EF25242B84F50030A733 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
 				};
 			};
 			buildConfigurationList = 67E3EF03242B6E120030A733 /* Build configuration list for PBXProject "kobiapp" */;
 			compatibilityVersion = "Xcode 9.3";
-			developmentRegion = en;
+			developmentRegion = tr;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				tr,
 				Base,
 			);
 			mainGroup = 67E3EEFF242B6E120030A733;
@@ -116,6 +225,7 @@
 			projectRoot = "";
 			targets = (
 				67E3EF07242B6E120030A733 /* kobiapp */,
+				67E3EF25242B84F50030A733 /* OneSignalNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -131,20 +241,91 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		67E3EF24242B84F50030A733 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D3AEEBB1F91420831BD43CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OneSignalNotificationServiceExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD6C438D10D7614A27D94C5C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kobiapp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		67E3EF04242B6E120030A733 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67E3EF20242B774A0030A733 /* HomeController.swift in Sources */,
 				67E3EF10242B6E120030A733 /* ViewController.swift in Sources */,
 				67E3EF0C242B6E120030A733 /* AppDelegate.swift in Sources */,
 				67E3EF0E242B6E120030A733 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		67E3EF22242B84F50030A733 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67E3EF29242B84F50030A733 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		67E3EF2C242B84F50030A733 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 67E3EF25242B84F50030A733 /* OneSignalNotificationServiceExtension */;
+			targetProxy = 67E3EF2B242B84F50030A733 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		67E3EF11242B6E120030A733 /* Main.storyboard */ = {
@@ -282,35 +463,91 @@
 		};
 		67E3EF1D242B6E130030A733 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97F7B0544391DCAC24D20C82 /* Pods-kobiapp.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = kobiapp/kobiapp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = QNDPS7VZ3X;
 				INFOPLIST_FILE = kobiapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kobivadisi.kobiapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		67E3EF1E242B6E130030A733 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39C05AEA885315EE8375AF97 /* Pods-kobiapp.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = kobiapp/kobiapp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = QNDPS7VZ3X;
 				INFOPLIST_FILE = kobiapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kobivadisi.kobiapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		67E3EF2F242B84F50030A733 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AC6BFC65F50674E2B7FB459 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = QNDPS7VZ3X;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kobivadisi.kobiapp.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		67E3EF30242B84F50030A733 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBAB9CB19A53C1B541D90A31 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = QNDPS7VZ3X;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kobivadisi.kobiapp.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -333,6 +570,15 @@
 			buildConfigurations = (
 				67E3EF1D242B6E130030A733 /* Debug */,
 				67E3EF1E242B6E130030A733 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67E3EF2E242B84F50030A733 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67E3EF2F242B84F50030A733 /* Debug */,
+				67E3EF30242B84F50030A733 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
